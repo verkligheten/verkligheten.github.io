@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.cdnfonts.com/css/roboto-mono');
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  height: 100%;
+  color: #444;
+  background-color: #fff;
+  margin: 0;
+}
+
+.section-holder {
+  border: 1px solid #aaa;
+  padding: 30px 30px 50px;
+  margin: 1rem;
+  min-width: 13rem;
+}
+
+.img-holder {
+  max-width: 350px;
+}
+
+.img-circle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: auto;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.sep-mini {
+  margin-top: 30px;
+  width: 20px;
+  position: relative;
+  height: 1px;
+  background: #101010;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: auto
+  }
+
+  .row {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px
+  }
+
+  .row {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px
+  }
+
+  .row {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+
+  .row {
+    display: flex;
+  }
+}
+
+section {
+  padding: 35px 0 0 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  margin: 20px 0;
+  color: #101010;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.about {
+  width: -webkit-fill-available;
+}
+
+.texture {
+  background: url(assets/images/texture.png);
+}
+
+.job {
+  padding: 15px 0;
+}
+
+.role {
+  display: flex;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.circle {
+  padding-right: 5px;
+  color: #444;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.job-company {
+  display: flex;
+
+  .company-name {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+}
+

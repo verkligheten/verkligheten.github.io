@@ -167,6 +167,7 @@ h3 {
 
 .about {
   width: -webkit-fill-available;
+  position: relative;
 }
 
 .texture {
@@ -205,6 +206,122 @@ h3 {
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 15px;
+  }
+}
+
+.btn-download {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-download:hover {
+  color: #000;
+}
+
+@media print {
+  .btn-download {
+    display: none;
+  }
+
+  body {
+    font-size: 10px;
+    color: #000;
+  }
+
+  .section-holder {
+    border: none;
+    background: none;
+    padding: 2px 0;
+    margin: 0;
+  }
+
+  .texture {
+    background: none;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    display: flex;
+    gap: 0;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-circle {
+    width: 100px;
+  }
+
+  .material-icons.md-48 {
+    font-size: 24px;
+  }
+
+  .sep-mini {
+    margin-top: 10px;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 2px 0;
+  }
+
+  ul {
+    margin: 2px 0;
+    padding-left: 15px;
+  }
+
+  li {
+    margin: 1px 0;
+  }
+
+  .job {
+    padding: 5px 0;
+    page-break-inside: avoid;
+  }
+
+  .company-name {
+    padding-bottom: 5px;
+  }
+
+  hr {
+    margin: 5px 0;
+    page-break-after: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a[href^="mailto"]::after,
+  a[href^="https"]::after {
+    content: none;
+  }
+
+  .hobbies {
+    margin-top: 10px;
+  }
+
+  .about-icon,
+  .expirience-icon {
+    display: none;
   }
 }
 

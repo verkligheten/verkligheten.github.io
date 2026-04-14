@@ -166,8 +166,7 @@ h3 {
 }
 
 .about {
-  width: -webkit-fill-available;
-  width: 100%;
+  flex: 1;
   position: relative;
   box-sizing: border-box;
 }

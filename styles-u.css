@@ -167,7 +167,9 @@ h3 {
 
 .about {
   width: -webkit-fill-available;
+  width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .texture {
@@ -227,101 +229,123 @@ h3 {
 
 @media print {
   .btn-download {
-    display: none;
+    display: none !important;
   }
 
   body {
-    font-size: 10px;
-    color: #000;
+    font-size: 10px !important;
+    color: #000 !important;
+    margin: 0 !important;
   }
 
   .section-holder {
-    border: none;
-    background: none;
-    padding: 2px 0;
-    margin: 0;
+    border: none !important;
+    background: none !important;
+    padding: 2px 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
   }
 
   .texture {
-    background: none;
+    background: none !important;
   }
 
   .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .row {
-    display: flex;
-    gap: 0;
+    display: flex !important;
+    gap: 0 !important;
   }
 
   section {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .img-circle {
-    width: 100px;
+    width: 80px !important;
   }
 
   .material-icons.md-48 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .sep-mini {
-    margin-top: 10px;
+    margin-top: 5px !important;
   }
 
   h3 {
-    margin: 5px 0;
+    margin: 3px 0 !important;
+    font-size: 14px !important;
+  }
+
+  .section-title {
+    font-size: 14px !important;
   }
 
   p {
-    margin: 2px 0;
+    margin: 2px 0 !important;
   }
 
   ul {
-    margin: 2px 0;
-    padding-left: 15px;
+    margin: 2px 0 !important;
+    padding-left: 15px !important;
   }
 
   li {
-    margin: 1px 0;
+    margin: 1px 0 !important;
   }
 
   .job {
-    padding: 5px 0;
+    padding: 4px 0 !important;
     page-break-inside: avoid;
   }
 
-  .company-name {
-    padding-bottom: 5px;
+  .job-company {
+    .company-name {
+      font-size: 13px !important;
+      padding-bottom: 3px !important;
+    }
+  }
+
+  .role {
+    font-size: 10px !important;
   }
 
   hr {
-    margin: 5px 0;
+    margin: 4px 0 !important;
     page-break-after: avoid;
   }
 
   a {
-    color: #000;
-    text-decoration: none;
+    color: #000 !important;
+    text-decoration: none !important;
   }
 
   a[href^="mailto"]::after,
   a[href^="https"]::after {
-    content: none;
+    content: none !important;
   }
 
   .hobbies {
-    margin-top: 10px;
+    margin-top: 8px !important;
   }
 
   .about-icon,
   .expirience-icon {
-    display: none;
+    display: none !important;
+  }
+
+  .about .sep-mini {
+    display: none !important;
+  }
+
+  .expirience .sep-mini {
+    display: none !important;
   }
 }
 
